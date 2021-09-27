@@ -1,0 +1,45 @@
+﻿{
+    "description": "Club facility data",
+    "title": "Facility schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "properties": { 
+        "FacilityId": { "type": "string" },
+        "Name": { "type": "string" },
+        "CommunityName": { "type": "string" },
+        "Info": { "type": "string" },
+        "RelationEnd": { "type": "string", "format": "date" },
+        "Communication": {
+            "type": "object",
+            "anyOf": [ { "$ref": "communication.json"} ]
+        },
+        
+        "Address": {
+            "type": "object",
+            "additionalProperties": false,
+            "allOf": [ { "$ref": "address.json" }]
+        },
+        "Coordinates": {
+            "type": "object",
+            "additionalProperties": false,
+            "allOf": [
+                {
+                    "$ref": "geocoordinates.json"
+                }
+            ]
+        },
+        "SubFacility": { 
+            "type": "array",
+            "items": { 
+                "type": "object",
+                "additionalProperties": false,
+                "allOf": [ { "$ref": "subfacility.json" } ]
+            }
+        }
+    },
+    
+    "required": [ "FacilityId", "Name" ],
+    "$comment": "The navascript defines generic properties with key, value pairs (AttributeArrayMessage).",
+    "$comment": "In this model we want to name all the properties, so this is a to do."
+}

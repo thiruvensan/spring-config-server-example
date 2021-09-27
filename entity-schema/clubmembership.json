@@ -1,0 +1,30 @@
+﻿{
+    "description": "Persons can have multiple memberships with clubs",
+    "title": "Club membership schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+        "ClubId": { "type": "string" },
+        "RelationStart": { "type": "string", "format": "date" },
+        "RelationEnd": { "type": "string", "format": "date" },
+        "Sport": { 
+            "type": "array",
+            "items": { 
+                "type": "object",
+                "additionalProperties": false,
+                "allOf": [ { "$ref": "sport.json" } ],
+                "properties": {
+                    "RelationStart": {
+                        "type": "string",
+                        "format": "date"
+                    },
+                    "RelationEnd": {
+                        "type": "string",
+                        "format": "date"
+                    }
+                }
+            }
+        }
+    }
+}

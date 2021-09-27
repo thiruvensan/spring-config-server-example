@@ -1,0 +1,21 @@
+﻿{
+    "description": "Root schema for generating complete documentation",
+    "title": "My schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "anyOf": [
+        { "$ref": "address.json" },
+        { "$ref": "binaryproperties.json" },
+        { "$ref": "club.json" },
+        { "$ref": "clubmembership.json" },
+        { "$ref": "clubperson.json" },
+        { "$ref": "communication.json" },
+        { "$ref": "facility.json" },
+        { "$ref": "geocoordinates.json" },
+        { "$ref": "organization.json" },
+        { "$ref": "person.json" },
+        { "$ref": "sport.json" },
+        { "$ref": "subfacility.json" }
+    ]
+}

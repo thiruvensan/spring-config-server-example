@@ -1,0 +1,26 @@
+﻿{
+    "description": "Subfacility, for example field, data",
+    "title": "Subfacility schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+        "SubFacilityId": {
+            "type": "string"
+        },
+        "Name": {
+            "type": "string"
+        },
+        "Coordinates": {
+            "type": "object",
+            "additionalProperties": false,
+            "allOf": [
+                {
+                    "$ref": "geocoordinates.json"
+                }
+            ]
+        }
+    },
+    "$comment": "The navascript defines generic properties with key, value pairs (AttributeArrayMessage).",
+    "$comment": "In this model we want to name all the properties, so this is a to do."
+}

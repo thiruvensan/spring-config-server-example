@@ -1,0 +1,14 @@
+﻿{
+    "description": "Data of different communication types",
+    "title": "Communication schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "type": "object", 
+    "properties": { 
+        "Telephone": { "type": "string" },
+        "Mobile": { "type": "string" },
+        "Fax": { "type": "string" },
+        "Email": { "type": "string" },
+        "Website": { "type": "string" }
+    }
+}

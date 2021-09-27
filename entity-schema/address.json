@@ -1,0 +1,41 @@
+﻿{
+    "description": "Address data used by persons, organizations and facilities",
+    
+    "title": "address schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+        "TypeOfAddress": 
+        {
+            "description": "Addresses have different types, such as visiting and postal addresses",
+            "type": "string",
+            "enum": [ "Visit", "Postal" ],         
+            "$comment": "To do: determine allowed types"
+            
+        },
+        "StreetName": 
+        {
+            "type": "string"
+        },
+        "AddressNumber": 
+        {
+            "type": "integer",
+            "exclusiveMinimum": 0
+        },
+        "AddressNumberAppendix": 
+        {
+            "type": "string"
+        },
+        "ZipCode": 
+        {
+            "type": "string"
+        },
+        "Country": 
+        {
+            "type": "string"
+        }
+        
+        
+    }
+}

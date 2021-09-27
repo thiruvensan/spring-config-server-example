@@ -1,0 +1,55 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Person schema",
+    "description": "Base person data",
+    "additionalProperties": false,
+    "properties": {
+        "PersonId": {
+            "type": "string"
+        },
+        "LastName": {
+            "type": "string"
+        },
+        "Infix": { "type": "string" },
+        "FirstName": {
+            "type": "string"
+        },
+        "Initials": { "type": "string" },
+        "DateOfBirth": { "type": "string", "format": "date" },
+        "DateOfPassing": { "type": "string", "format": "date" },
+        "Gender": { 
+            "type": "string",
+            "enum": [ "male", "female", "unknown" ]
+        },
+        "PrivacyLevel": { 
+            "type": "string",
+            "enum": [ "high", "medium", "low" ]
+        },
+        "RelationType": { 
+            "type": "string",
+            "enum": [ "A", "B" ]
+        },
+        "Photo": {
+            "type": "array",          
+            "items": { 
+                "type": "object",
+                "additionalProperties": false,
+                "allOf": [ { "$ref": "binaryproperties.json" } ]
+            }
+        },
+          
+        "Address": {
+            "$ref": "address.json"
+        }, 
+        
+        "Communication": { 
+            "type": "object",
+            "additionalProperties": false,
+            "allOf": [ { "$ref": "communication.json" } ]
+        }
+        
+    },
+    
+    "$comment": "todo: privacy levels, relation type"
+}

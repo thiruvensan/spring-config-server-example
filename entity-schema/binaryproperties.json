@@ -1,0 +1,20 @@
+﻿{
+    "description": "The properties of binary files, such as photographs",
+    "title": "Binary Properties Schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+        "Hash": {
+            "type": "string",
+            "description": "Hash for entity Binary GET"
+        },
+        "Url": {
+            "type": "string",
+            "description": "Temporarily resolvable URL"
+        },
+        "Width": { "type": "integer" },
+        "Height": { "type": "integer" }
+    },
+    "required": [ "Hash", "Url", "Width", "Height" ]
+}

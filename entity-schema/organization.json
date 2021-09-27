@@ -1,0 +1,33 @@
+﻿{
+    "description": "Base data for organizations",
+    "title": "Organization schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+        "OrganizationType": {
+            "type": "string",
+            "enum": [ "TypeA", "TypeB" ],
+            "$comment": "To do: find the different organization types"
+        },
+        "Name": { "type": "string" },
+        "ShortName": { "type": "string" },
+        "Info": { "type": "string" },
+        "Founded": { 
+            "type": "string", 
+            "format": "date" 
+        },
+        "Dissolved": {
+            "type": "string",
+            "format": "date"
+        },
+        "Logo": {
+            "type": "array",
+            "items": {
+                "$ref": "binaryproperties.json"
+            }   
+        }        
+    }
+}
+
+

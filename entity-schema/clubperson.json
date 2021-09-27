@@ -1,0 +1,19 @@
+﻿{
+    "description": "Data of person with a club membership",
+    "title": "Clubperson schema",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": false,
+    "type": "object",
+    "allOf": [ { "$ref": "person.json" } ],
+    "properties": {
+        "ClubMembership": { 
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "allOf": [ { "$ref": "clubmembership.json" } ]
+            }
+        }
+    }
+    
+}
