@@ -1,72 +1,276 @@
 [{
 	"ClubData": {
-		"RegionOwner": "",
-		"ClubIdentifier": "ClubId",
-		"ClubName": "Name",
-		"ClubShortName": "ShortName",
-		"ClubSearchName": "",
-		"TypeOfClub": "",
-		"CategoryOfClub": "",
-		"LegalName": "",
-		"IsCreditor": "",
-		"CreditorNumber": "",
-		"DisplayCreditorNumber": "",
-		"TypeOfCharge": "",
-		"LegalForm": "",
-		"EstablishedDate": "",
-		"JubileeReferenceDate": "",
-		"DissolvedDate": "Dissolved",
-		"Logo": "Logo",
-		"BusinessRegistrationNumber": "",
-		"StreetName": "StreetName",
-		"AddressNumber": "AddressNumber",
-		"AddressNumberAppendix": "AddressNumberAppendix",
-		"AddressCountryCode": "Country",
-		"ZipCode": "ZipCode",
-		"City": "",
-		"PlaceOfBusiness": "",
-		"CommunityOfBusiness": "",
-		"Annotation": "",
-		"Info": "Info",
-		"TelephoneData": "Telephone",
-		"TypeOfTelephone": "",
-		"FaxData": "Fax",
-		"TypeOfFax": "",
-		"EmailData": "Email",
-		"TypeOfEmail": "",
-		"WebsiteData": "Website",
-		"TypeOfWebsite": "",
-		"BankAccountNumber": "",
-		"BICCode": "",
-		"Ascription": "",
-		"AscriptionPlace": "",
-		"HomeShirtColors": "",
-		"HomeShortsColors": "",
-		"HomeStockingColors": "",
-		"AwayShirtColors": "",
-		"AwayShortsColors": "",
-		"AwayStockingColors": "",
-		"ReserveShirtColors": "",
-		"ReserveShortsColors": "",
-		"ReserveStockingColors": "",
-		"MainSponsor": "",
-		"ShirtSponsor": "",
-		"YouthTrainingLevel": "",
-		"isCollectionServiced": "",
-		"CollectionServiceBankAccountNumber": "",
-		"CollectionServiceAscription": "",
-		"CollectionServiceAscriptionPlace": "",
-		"CollectionServiceAlternateBankAccountNumber": "",
-		"CollectionServiceAlternateAscription": "",
-		"CollectionServiceAlternateAscriptionPlace": "",
-		"SecretaryMemberIdentifier": "",
-		"SecretaryName": "",
-		"AccountType": "",
-		"TelephoneType": "",
-		"CollectionServicePaymentMethod": "",
-		"RegionField": "",
-		"RegionIndoor": "",
-		"SubRegionField": "",
-		"SubRegionIndoor": ""
+		"RegionOwner": {
+			"propName": "",
+			"type": "string"
+		},
+		"ClubIdentifier": {
+			"propName": "ClubId",
+			"type": "string"
+		},
+		"ClubName": {
+			"propName": "Name",
+			"type": "string"
+		},
+		"ClubShortName": {
+			"propName": "ShortName",
+			"type": "string"
+		},
+		"ClubSearchName": {
+			"propName": "",
+			"type": "string"
+		},
+		"TypeOfClub": {
+			"propName": "",
+			"type": "string"
+		},
+		"CategoryOfClub": {
+			"propName": "",
+			"type": "string"
+		},
+		"LegalName": {
+			"propName": "",
+			"type": "string"
+		},
+		"IsCreditor": {
+			"propName": "",
+			"type": "string"
+		},
+		"CreditorNumber": {
+			"propName": "",
+			"type": "string"
+		},
+		"DisplayCreditorNumber": {
+			"propName": "",
+			"type": "string"
+		},
+		"TypeOfCharge": {
+			"propName": "",
+			"type": "string"
+		},
+		"LegalForm": {
+			"propName": "",
+			"type": "string"
+		},
+		"EstablishedDate": {
+			"propName": "",
+			"type": "string"
+		},
+		"JubileeReferenceDate": {
+			"propName": "",
+			"type": "string"
+		},
+		"DissolvedDate": {
+			"propName": "Dissolved",
+			"type": "string"
+		},
+		"Logo": {
+			"propName": "Logo",
+			"type": "string"
+		},
+		"BusinessRegistrationNumber": {
+			"propName": "",
+			"type": "string"
+		},
+		"StreetName": {
+			"propName": "StreetName",
+			"type": "string"
+		},
+		"AddressNumber": {
+			"propName": "AddressNumber",
+			"type": "string"
+		},
+		"AddressNumberAppendix": {
+			"propName": "AddressNumberAppendix",
+			"type": "string"
+		},
+		"AddressCountryCode": {
+			"propName": "Country",
+			"type": "string"
+		},
+		"ZipCode": {
+			"propName": "ZipCode",
+			"type": "string"
+		},
+		"City": {
+			"propName": "",
+			"type": "string"
+		},
+		"PlaceOfBusiness": {
+			"propName": "",
+			"type": "string"
+		},
+		"CommunityOfBusiness": {
+			"propName": "",
+			"type": "string"
+		},
+		"Annotation": {
+			"propName": "",
+			"type": "string"
+		},
+		"Info": {
+			"propName": "Info",
+			"type": "string"
+		},
+		"TelephoneData": {
+			"propName": "Telephone",
+			"type": "string"
+		},
+		"TypeOfTelephone": {
+			"propName": "",
+			"type": "string"
+		},
+		"FaxData": {
+			"propName": "Fax",
+			"type": "string"
+		},
+		"TypeOfFax": {
+			"propName": "",
+			"type": "string"
+		},
+		"EmailData": {
+			"propName": "Email",
+			"type": "string"
+		},
+		"TypeOfEmail": {
+			"propName": "",
+			"type": "string"
+		},
+		"WebsiteData": {
+			"propName": "Website",
+			"type": "string"
+		},
+		"TypeOfWebsite": {
+			"propName": "",
+			"type": "string"
+		},
+		"BankAccountNumber": {
+			"propName": "",
+			"type": "string"
+		},
+		"BICCode": {
+			"propName": "",
+			"type": "string"
+		},
+		"Ascription": {
+			"propName": "",
+			"type": "string"
+		},
+		"AscriptionPlace": {
+			"propName": "",
+			"type": "string"
+		},
+		"HomeShirtColors": {
+			"propName": "",
+			"type": "string"
+		},
+		"HomeShortsColors": {
+			"propName": "",
+			"type": "string"
+		},
+		"HomeStockingColors": {
+			"propName": "",
+			"type": "string"
+		},
+		"AwayShirtColors": {
+			"propName": "",
+			"type": "string"
+		},
+		"AwayShortsColors": {
+			"propName": "",
+			"type": "string"
+		},
+		"AwayStockingColors": {
+			"propName": "",
+			"type": "string"
+		},
+		"ReserveShirtColors": {
+			"propName": "",
+			"type": "string"
+		},
+		"ReserveShortsColors": {
+			"propName": "",
+			"type": "string"
+		},
+		"ReserveStockingColors": {
+			"propName": "",
+			"type": "string"
+		},
+		"MainSponsor": {
+			"propName": "",
+			"type": "string"
+		},
+		"ShirtSponsor": {
+			"propName": "",
+			"type": "string"
+		},
+		"YouthTrainingLevel": {
+			"propName": "",
+			"type": "string"
+		},
+		"isCollectionServiced": {
+			"propName": "",
+			"type": "string"
+		},
+		"CollectionServiceBankAccountNumber": {
+			"propName": "",
+			"type": "string"
+		},
+		"CollectionServiceAscription": {
+			"propName": "",
+			"type": "string"
+		},
+		"CollectionServiceAscriptionPlace": {
+			"propName": "",
+			"type": "string"
+		},
+		"CollectionServiceAlternateBankAccountNumber": {
+			"propName": "",
+			"type": "string"
+		},
+		"CollectionServiceAlternateAscription": {
+			"propName": "",
+			"type": "string"
+		},
+		"CollectionServiceAlternateAscriptionPlace": {
+			"propName": "",
+			"type": "string"
+		},
+		"SecretaryMemberIdentifier": {
+			"propName": "",
+			"type": "string"
+		},
+		"SecretaryName": {
+			"propName": "",
+			"type": "string"
+		},
+		"AccountType": {
+			"propName": "",
+			"type": "string"
+		},
+		"TelephoneType": {
+			"propName": "",
+			"type": "string"
+		},
+		"CollectionServicePaymentMethod": {
+			"propName": "",
+			"type": "string"
+		},
+		"RegionField": {
+			"propName": "",
+			"type": "string"
+		},
+		"RegionIndoor": {
+			"propName": "",
+			"type": "string"
+		},
+		"SubRegionField": {
+			"propName": "",
+			"type": "string"
+		},
+		"SubRegionIndoor": {
+			"propName": "",
+			"type": "string"
+		}
 	}
 }]
