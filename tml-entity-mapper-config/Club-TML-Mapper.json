@@ -93,7 +93,7 @@
 			"type": "string"
 		},
 		"City": {
-			"propName": "",
+			"propName": "City",
 			"type": "string"
 		},
 		"PlaceOfBusiness": {
