@@ -34,7 +34,7 @@
 		},
 		"IsCreditor": {
 			"propName": "",
-			"type": "string"
+			"type": "boolean"
 		},
 		"CreditorNumber": {
 			"propName": "",
@@ -54,19 +54,19 @@
 		},
 		"EstablishedDate": {
 			"propName": "",
-			"type": "string"
+			"type": "date"
 		},
 		"JubileeReferenceDate": {
 			"propName": "",
-			"type": "string"
+			"type": "date"
 		},
 		"DissolvedDate": {
 			"propName": "Dissolved",
-			"type": "string"
+			"type": "date"
 		},
 		"Logo": {
 			"propName": "Logo",
-			"type": "string"
+			"type": "binary"
 		},
 		"BusinessRegistrationNumber": {
 			"propName": "",
@@ -210,7 +210,7 @@
 		},
 		"isCollectionServiced": {
 			"propName": "",
-			"type": "string"
+			"type": "boolean"
 		},
 		"CollectionServiceBankAccountNumber": {
 			"propName": "",
