@@ -89,31 +89,31 @@
          "type":"date"
       },
       "TypeOfAddress":{
-         "propName":"",
+         "propName":"TypeOfAddress",
          "type":"string"
       },
       "StreetName":{
-         "propName":"",
+         "propName":"StreetName",
          "type":"string"
       },
       "AddressNumber":{
-         "propName":"",
+         "propName":"AddressNumber",
          "type":"string"
       },
       "AddressNumberAppendix":{
-         "propName":"",
+         "propName":"AddressNumberAppendix",
          "type":"string"
       },
       "City":{
-         "propName":"",
+         "propName":"City",
          "type":"string"
       },
       "ZipCode":{
-         "propName":"",
+         "propName":"ZipCode",
          "type":"string"
       },
       "AddressCountryCode":{
-         "propName":"",
+         "propName":"Country",
          "type":"string"
       },
       "TypeOfTelephone":{
